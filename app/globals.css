@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body { @apply bg-slate-100 text-slate-900 antialiased; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+@media print {
+  body * { visibility: hidden; }
+  #slip, #slip * { visibility: visible; }
+  #slip { position: absolute; left: 0; top: 0; width: 100%; box-shadow: none !important; }
+  .no-print { display: none !important; }
+}
